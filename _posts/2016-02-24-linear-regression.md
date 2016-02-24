@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Linear regression yooo"
+title:  "Linear regression yooo (WIP)"
 date:   2016-02-24 13:37:00 +1100
 categories: machine_learning
 ---
