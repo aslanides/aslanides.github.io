@@ -3,6 +3,7 @@ layout: post
 title:  "Marginalization tricks (WIP)"
 date:   2016-02-24 17:37:00 +1100
 categories: machine_learning
+excerpt: In this post we explore some tricks for convenient marginalization in directed acyclic graphs (DAGs) using numpy's einsum API.
 ---
 
 I discovered this useful trick while I was recently working on an assignment question for Christfried Webers' [excellent Introduction to Statistical Machine Learning course](https://sml.forge.nicta.com.au/isml15/). The idea is to simplify implementations of the [belief propagation](https://en.wikipedia.org/wiki/Belief_propagation) algorithm on acyclic factor graphs.

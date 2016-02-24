@@ -3,6 +3,7 @@ layout: post
 title:  "Linear regression yooo (WIP)"
 date:   2016-02-24 13:37:00 +1100
 categories: machine_learning
+excerpt: A brief look at some cool results that are often overlooked in short treatments of linear regression. Also, my first blog post! Yay :)
 ---
 
 Baby steps guys, so let's make the first blog post about something simple. Here's my take on linear regression :). We start with the standard (frequentist) maximum likelihood approach, then show the correspondence between isotropic Gaussian priors and $$l_2$$ regularizers, before hinting at the full Bayesian treatment. All of these results are derived and explored in more detail in Bishop (2006).
