@@ -169,6 +169,7 @@
  */
 .page-content {
     padding: $spacing-unit 0;
+    //background-color: #fff;
 }
 
 .page-heading {
@@ -194,6 +195,21 @@
     font-size: 24px;
 }
 
+.posts { list-style-type: none; }
+
+.posts li { margin-bottom: 30px; }
+
+.posts .post-link {
+  font-size: 20px;
+  letter-spacing: -1px;
+  line-height: 1;
+}
+
+.posts .post-date {
+  display: block;
+  font-size: 15px;
+  color: #818181;
+}
 
 
 /**
@@ -201,6 +217,12 @@
  */
 .post-header {
     margin-bottom: $spacing-unit;
+}
+
+.post-date {
+    display: block;
+    font-size: 15px;
+    color: #818181;
 }
 
 .post-title {
