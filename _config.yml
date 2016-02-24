@@ -16,4 +16,6 @@ twitter_username: john_aslanides
 github_username:  aslanides
 
 # Build settings
-markdown: kramdown
+#markdown: kramdown
+markdown: redcarpet
+permalink: pretty
