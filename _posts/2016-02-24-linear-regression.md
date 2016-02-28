@@ -14,13 +14,11 @@ In the standard regression task we are given labelled data
 
 $$\mathcal{D} \stackrel{\cdot}{=} \left\{\left(x_{i},y_{i}\right)\right\}_{i=1}^{M},$$
 
-with each $$ x_{i}\in\mathbb{R}^K$$ drawn i.i.d. from some unknown process $$ p(x)$$, and $$ y_i\in \mathbb{R},$$
+with each $$ x_{i}\in\mathbb{R}^K$$ drawn i.i.d. from some unknown process $$ p(x)$$, and $$ y_i\in \mathbb{R},$$ and our objective is to learn a linear mapping $$ f:\mathbb{R}^K\to\mathbb{R} $$ of the form
 
-and our objective is to learn a linear mapping $$ f:\mathbb{R}^K\to\mathbb{R} $$
+$$f(x,w;\phi)=w^T\phi(x),$$
 
-$$f(x,w;\phi)=w^T\phi(x)$$
-
-where the basis functions
+where $$w\in\mathbb{R}^N$$ and the basis functions
 $$\phi : \mathbb{R}^K \to \mathbb{R}^N$$
 are user-defined and fixed, and we place no restriction on the relative sizes of $$ K $$ and $$ N$$. Now, let's assume the data contains additive Gaussian noise, so that
 
@@ -28,7 +26,7 @@ $$y(x)=f(x)+\epsilon \qquad \epsilon\sim\mathcal{N}(0,\beta^{-1}),$$
 
 and so the distribution of the targets conditioned on the inputs is
 
-$$p(y|x) = \mathcal{N}\left(w^T\phi(x),\beta^{-1}\right)$$
+$$p(y|x) = \mathcal{N}\left(w^T\phi(x),\beta^{-1}\right).$$
 
 # Max Likelihood Solution
 
@@ -41,15 +39,15 @@ $$
 
 		&\propto \prod_{i=1}^{N}p(y_i|x_i)\\
 
-		&= \prod_{i=1}^{N}\mathcal{N}\left(w^T\phi(x_i),\beta^{-1}\right)\\
+		&= \prod_{i=1}^{N}\mathcal{N}\left(w^T\phi(x_i),\beta^{-1}\right).\\
 
 	\end{aligned}
 $$
 
-Our objective now is to learn the weights $$ w$$ that maximise this likelihood, taking the variance of the noise $$ \beta^{-1}$$ to be fixed.That is, we wish to find
+Our objective now is to learn the weights $$ w$$ that maximise this likelihood, taking the variance of the noise $$ \beta^{-1}$$ to be fixed. That is, we wish to find
 
 $$
-\hat{w}_{\text{ML}} = \arg\max_{w}p(\mathcal{D}|w)
+\hat{w}_{\text{ML}} = \arg\max_{w}p(\mathcal{D}|w).
 $$
 
 Now, $$ \log(\cdot) $$ is a monotonically increasing function, so
