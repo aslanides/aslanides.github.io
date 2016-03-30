@@ -138,9 +138,24 @@ where, as it turns out (Equations (3.53) and (3.54) in Bishop),
 $$
 \begin{aligned}
 m_N &= \beta S_N \Phi^T y\\
-S_N^{-1} &= \alpha I + \beta \Phi^T\Phi.
+S_N^{-1} &= \alpha I + \beta \Phi^T\Phi.\\
 \end{aligned}
 $$
+
+Code found [here](/code/bayes-regression.nb)
+<table>
+	<tr>
+		<td>
+			<img src="/figures/plt1.png" width="200">
+		</td>
+		<td>
+			<img src="/figures/plt2.png" width="200">
+		</td>
+		<td>
+			<img src="/figures/plt3.png" width="200">
+		</td>
+	</tr>
+</table>
 
 
 # Predictive distribution
