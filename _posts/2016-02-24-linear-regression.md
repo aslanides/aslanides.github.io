@@ -142,20 +142,37 @@ S_N^{-1} &= \alpha I + \beta \Phi^T\Phi.\\
 \end{aligned}
 $$
 
-Code found [here](/code/bayes-regression.nb)
+We now have the ingredients we need to implement a Bayesian updating scheme. The _Mathematica_ notebook can be found [here](/code/bayes-regression.nb).
 <table>
 	<tr>
 		<td>
-			<img src="/figures/plt1.png" width="200">
+			<img src="/figures/plt1.png" width="300">
 		</td>
 		<td>
-			<img src="/figures/plt2.png" width="200">
+			<img src="/figures/plt2.png" width="300">
 		</td>
 		<td>
-			<img src="/figures/plt3.png" width="200">
+			$$\  \dots\  $$
+		</td>
+		<td>
+			<img src="/figures/plt20.png" width="300">
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<center>(a)</center>
+		</td>
+		<td>
+			<center>(b)</center>
+		</td>
+		<td>
+		</td>
+		<td>
+			<center>(c)</center>
 		</td>
 	</tr>
 </table>
+Figure: Contour plots of the distribution $$p(w)$$. (a) Isotropic prior. (b) Posterior after updating on one data point. (c) Posterior after updating on 20 data points. The white $$X$$ represents the ground truth.
 
 
 # Predictive distribution
