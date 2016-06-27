@@ -89,6 +89,8 @@ Without observing the state of the grass (variable $$C$$), $$A$$ and $$B$$ are _
 
 _Note_: After two hours of this, I'm stumped. I thought I'd be able to show this easily with the two weak assumptions $$p(C=1\lvert A=1)$ > \frac{1}{2}$$ and $$p(C=1\lvert B=1)$ > \frac{1}{2}$$, and maybe relying on the rather stronger assumption $$P(b)=p(a)$$. I've been bashing the sum and product rules with no success. What do?
 
+---
+
 [1] For convenience and clarity we use the Einstein notation explained in my previous blog post.
 
 [2] C. M. Bishop. _Pattern Recognition and Machine Learning_. Springer, 2006
