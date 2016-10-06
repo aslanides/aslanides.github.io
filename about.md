@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-![Me :-)](../assets/me.png =250x)
+<center><img src="../assets/me.png" width="200" /></center>
 
 Yo! I'm a MSc student in [Marcus Hutter's](http://hutter1.net) reinforcement learning group at the [Australian National University](http://anu.edu.au), expecting to graduate in December 2016. Watch this space! I'm planning to put up code, blog posts, and more in the near future.
 
