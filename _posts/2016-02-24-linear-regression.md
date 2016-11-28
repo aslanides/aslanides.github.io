@@ -8,7 +8,10 @@ excerpt: A brief look at some cool results that are often overlooked in short tr
 
 Hello, world! My starting this blog has been long overdue. I thought I'd ease myself into it with something easy and uncontroversial, so here's my take on linear regression. We start with the standard (frequentist) maximum likelihood approach, and show that Gaussian noise induces the familiar least-squares result, then show the correspondence between isotropic Gaussian priors and $$l_2$$ regularizers, before playing with some Bayesian updating using _Mathematica_. Note that these results are all well-known and discussed in detail in Bishop [1]; my motivation for reproducing them here is that I hadn't encountered a concise and complete online write-up that I found satisfying.
 
-_Update_ (2016-03-30): Edits for readability, and added a section on Bayesian regression.
+Changelog:
+
+* 2016-03-30: _Edits for readability, and added a section on Bayesian regression._
+* 2016-11-28: _Some more minor edits, and moved the code to its own [GitHub repo](http://github.com/aslanides/bayes-regression)._
 
 # Setup
 
@@ -16,7 +19,7 @@ In the standard regression task we are given labelled data
 
 $$\mathcal{D} \stackrel{\cdot}{=} \left\{\left(x_{i},y_{i}\right)\right\}_{i=1}^{N},$$
 
-with each of the $$y_i\in\mathbb{R}$$, and $$ x_{i}\in\mathcal{X}$$ drawn i.i.d. from some unknown stochastic process $$ \mu(x)$$. Our objective is to learn a linear model $$ f:\mathcal{X}\to\mathbb{R} $$ of the form
+with each of the $$y_i\in\mathbb{R}$$, and $$ x_{i}\in\mathcal{X}$$ drawn i.i.d. from some unknown stochastic process $$ \mu(x,y)$$. Our objective is to learn a linear model $$ f:\mathcal{X}\to\mathbb{R} $$ of the form
 
 $$f(x;w,\phi)=w^T\phi(x),$$
 
@@ -39,9 +42,9 @@ Given that our dataset is drawn i.i.d., the likelihood is given by
 $$
 	\begin{aligned}
 
-	p(\mathcal{D}|w) &= \prod_{i=1}^{N}p(y_i|x_i,w)\mu(x_i)\\
+	p(\mathcal{D}|w) &= \prod_{i=1}^{N}p(y_i|x_i,w)p(x_i)\\
 
-		&= \prod_{i=1}^{N}p(y_i|x_i)\prod_{j=1}^{N}\mu(x_j)\\
+		&= \prod_{i=1}^{N}p(y_i|x_i)\prod_{j=1}^{N}p(x_j)\\
 
 		& \propto \prod_{i=1}^{N}p(y_i|x_i)\\
 
@@ -50,13 +53,13 @@ $$
 	\end{aligned}
 $$
 
-Our objective now is to learn the weights $$ w$$ that maximise this likelihood, taking the variance of the noise $$ \beta^{-1}$$ to be fixed. That is, we wish to find
+Our objective now is to learn the weights $$ w$$ that maximise this likelihood, taking the variance of the noise $$ \beta^{-1}$$ to be fixed. Notice that since the $$p(x_{j})$$ don't depend on the parameters \\(w\\), we can neglect them in our objective function. The maximum likelihood (ML) solution for $$w$$ is
 
 $$
 \hat{w}_{\text{ML}} = \arg\max_{w}p(\mathcal{D}|w).
 $$
 
-Now, $$ \log(\cdot) $$ is a monotonically increasing function, so
+Now, $$ \log(\cdot) $$ is a monotonically increasing concave function, so
 
 $$
 \begin{aligned}
@@ -142,7 +145,7 @@ S_N^{-1} &= \alpha I + \beta \Phi^T\Phi.\\
 \end{aligned}
 $$
 
-We now have the ingredients we need to implement a Bayesian updating scheme. The _Mathematica_ notebook can be found [here](/code/bayes-regression.nb).
+We now have the ingredients we need to implement a Bayesian updating scheme. The _Mathematica_ notebook can be found [here](http://github.com/aslanides/bayes-regression).
 <table>
 	<tr>
 		<td>
@@ -183,6 +186,10 @@ $$
 p(y|x,\mathcal{D}) = \int_\mathcal{W}\text{d}wp(y|w,x,\mathcal{D})p(w)
 $$
 
-Of course, the central issue with the Bayesian scheme (neglecting the computational/analytic difficulties arising from maintaining and updating a large distribution) is choosing the prior in a sensible and principled way. Note that the prior we used in the polynomial fitting example above was essentially chosen for convenience; though it is simple and thus reasonable according to Ockham's principle, it is still chosen arbitrarily. Enter Solomonoff's universal prior, which I'll discuss more in a later post.
+Of course, the central issue with the Bayesian scheme (neglecting the computational/analytic difficulties arising from maintaining and updating a large distribution) is choosing the prior in a sensible and principled way. Note that the prior we used in the polynomial fitting example above was essentially chosen for convenience; though it is simple and thus reasonable according to Ockham's principle, it is still chosen arbitrarily. Enter Solomonoff's universal prior, which I'll discuss more in a later post. $$\square$$
+
+---
+
+# References
 
 [1] C. M. Bishop. _Pattern Recognition and Machine Learning_. Springer, 2006
