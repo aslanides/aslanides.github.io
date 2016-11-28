@@ -8,6 +8,10 @@ excerpt: In this post we explore a convenient trick for marginalizing discrete d
 
 I discovered this useful trick while I was recently working on an assignment question for Christfried Webers' [excellent Introduction to Statistical Machine Learning course](https://sml.forge.nicta.com.au/isml15/). The idea is to simplify implementations of the [belief propagation](https://en.wikipedia.org/wiki/Belief_propagation) algorithm on acyclic factor graphs, using NumPy's Einstein summation API.
 
+Changelog:
+
+* 2016-11-28: _Add references._
+
 # Einstein notation
 
 The [Einstein summation notation](https://en.wikipedia.org/wiki/Einstein_notation) is a really convenient way to represent operations on multidimensional matrices. It's primarily used when manipulating tensors in differential geometry and in relativistic field theories in physics, but we'll be using it to do operations on discrete joint distributions, which are basically big normalized matrices. The distinction between a tensor and a matrix is that the [tensor](https://en.wikipedia.org/wiki/Tensor) has to behave in a certain way under coordinate transformations; for our purposes, this (physically motivated) constraint is lifted.
@@ -116,7 +120,7 @@ As long as the shapes match up, then we have combined two rank-2 tensors to make
 
 # Belief propagation
 
-We have a graphical model of discrete variables $$ X=\left(x_1,\dots,x_N\right)$$ that induces some factorisation of the joint distribution $$ p(X)=\prod_{s}f_s\left(X_s\right),$$ where the factors $$ f_s$$ are functions of the variable subsets $$ X_s \subset X$$. When it comes to marginalisation:
+Following Bishop [1], We have a graphical model of discrete variables $$ X=\left(x_1,\dots,x_N\right)$$ that induces some factorisation of the joint distribution $$ p(X)=\prod_{s}f_s\left(X_s\right),$$ where the factors $$ f_s$$ are functions of the variable subsets $$ X_s \subset X$$. When it comes to marginalisation:
 
 $$ \begin{aligned} p(x) &= \sum_{X\backslash x} p(X)\\ &= \sum_{X\backslash x} \prod_{s\in\text{ne}(x)} F_s\left(x,X_s\right)\\ &= \prod_{s\in\text{ne}(x)}\sum_{X_s}F_s\left(x,X_s\right)\\ &:= \prod_{s\in\text{ne}(x)} \mu_{f_s \to x}(x), \end{aligned} $$
 
@@ -136,4 +140,10 @@ Similarly for equation $$ (2)$$:
 
 $$ \left[\mu_{x \to f}\right]_{i} = \left[\mu_{f_1 \to x}\right]_{i} \dots \left[\mu_{f_L \to x}\right]_{i}.$$
 
-A short demo on a simple Bayesian network can be found [here](https://github.com/aslanides/DAGInference).
+A short demo on a simple Bayesian network can be found [here](https://github.com/aslanides/dag-inference).
+
+---
+
+# References
+
+[1] C. M. Bishop. _Pattern Recognition and Machine Learning_. Springer, 2006
