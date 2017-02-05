@@ -34,6 +34,25 @@ a:visited { color: #205caa; }
   zoom: 1;
 }
 
+.photo {
+	width: 75%;
+	margin: auto;
+	display: block;
+	border: 1px solid #000000;
+	border-radius: 18px 18px 18px 18px;
+	box-shadow: 10px 10px 24px 4px rgba(0,0,0,0.5);
+}
+
+figure {
+	display: inline-block;
+	margin: auto;
+}
+
+figure figcaption {
+	text-align: center;
+	line-height: 3;
+	font-style: italic;
+}
 
 /* Layout Styles */
 /* ----------------------------------------------------------*/
