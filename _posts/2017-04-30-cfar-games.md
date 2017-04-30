@@ -3,7 +3,7 @@ layout: post
 title:  "Bay Area II: CFAR Workshop"
 date:   2017-04-30 21:00:00 +1100
 categories: travel
-excerpt: 'Apparently the most memorable things I learnt at a CFAR workshop.'
+excerpt: 'Apparently the most memorable things I learnt at CFAR were the games.'
 ---
 
 _This is the second of two posts relating my Bay area visit of August-September 2016. You can read the first part [here](http://aslanides.io/travel/2016/12/28/bay-area/)._
