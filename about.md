@@ -6,33 +6,49 @@ permalink: /about/
 
 <center><img src="../assets/me.png" style="border-radius:50%" width="150" /></center>
 
-Hey! I've recently graduated (December '16) with an MSc in computer science from  the [Australian National University][anu]. My primary interests are in machine learning and artificial intelligence. Over the coming months I'll be putting up blog posts and code about ideas and projects that I'm working on.
+I'm an Australian artificial intelligence researcher based in London, working at [DeepMind]. I was born in [Canberra] in 1990 to loving parents, the poet [Timoshenko Aslanides] and political scientist [Jenny Stewart].
 
-In 2012, I worked with Professor [Craig Savage][craig] on physics education research for teaching special relativity. My BSc [Honours thesis][BSc thesis] and [a Physical Review publication][AS2013] were the result. In 2013, I worked on novel signal processing techniques for the [LIGO] project. In 2015, I worked at an awesome social network startup based in Canberra called [Karma]. My [Masters thesis][MSc thesis] was in artificial general intelligence, under [Jan Leike][jan] and [Marcus Hutter][marcus]. An accompanying JavaScript demo relating to [AIXI] and its variants can be found [here][demo]. I will be presenting a [paper][JLH2017] based on this work at [IJCAI] in Melbourne later this year.
+I graduated from the [Australian National University] in 2016 with an MSc in computer science. My [Masters thesis] was on reinforcement learning under the joint supervision of [Jan Leike] and [Marcus Hutter], and resulted in an [IJCAI publication][ALH2017] and accompanying web [demo]. Prior to this, I worked on [Karma], a new kind of social network based around open letters of gratitude and founded in Canberra in 2015. I've also worked as a consultant to [ACT Health] and [iungo], a smart car startup based in Sydney. In 2013 I worked on signal processing techniques for the [LIGO] project and on conditional random fields at the (now-defunct) [NICTA]. In 2012 I graduated from the [Australian National University] with a BSc in physics. My [Honours thesis] was in physics education research under the supervision of [Craig Savage], and resulted in a [Physical Review publication][AS2013]. I'm also (sadly!) a lapsed pianist; in 2011 I earned the [AMusA] diploma in piano performance.
 
 The easiest way to contact me is by email:
 
 <img src="../assets/email.png" width="300" />
 
-You can also check out my [GitHub] and my [CV], and feel free to connect with me on [LinkedIn] or [Facebook].
+You can also check out my [GitHub] and my [CV], and feel free to connect with me on [Google+], [LinkedIn] or [Facebook]. You can also read public letters about me on [Karma Wiki].
 
-[marcus]: http://hutter1.net
-[craig]: http://people.physics.anu.edu.au/~cms130/
-[jan]: https://jan.leike.name/
 
-[demo]: http://aslanides.github.io/aixijs
-[anu]: http://anu.edu.au
-[AIXI]: https://en.wikipedia.org/wiki/AIXI
+<!-- People -->
+[Timoshenko Aslanides]: https://www.jennystewart.net.au/
+[Jenny Stewart]: http://grapevine.com.au/~timoshenko/
+[Marcus Hutter]: http://hutter1.net
+[Craig Savage]: http://people.physics.anu.edu.au/~cms130/
+[Jan Leike]: https://jan.leike.name/
+
+<!-- Social media -->
 [GitHub]: https://github.com/aslanides
 [Karma]: https://karma.wiki
 [Facebook]: https://www.facebook.com/john.aslanides
 [LinkedIn]: https://linkedin.com/in/johnaslanides
+[Google+]: https://plus.google.com/+johnaslanides
+[Karma Wiki]: https://karma.wiki/app/secure/user/bio:auth0%7C55c594c5a03e447768c72b57/biography/received
 
-
-[BSc thesis]: ../docs/honours_thesis.pdf
-[MSc thesis]: ../docs/masters_thesis.pdf
-[CV]: ../docs/cv.pdf
-[AS2013]: http://journals.aps.org/prper/abstract/10.1103/PhysRevSTPER.9.010118
-[JLH2017]: https://arxiv.org/abs/1705.10557
+<!-- Places and organisations -->
+[Canberra]: https://en.wikipedia.org/wiki/Canberra
+[Australian National University]: http://anu.edu.au
+[DeepMind]: https://deepmind.com
+[NICTA]: http://nicta.com.au
 [LIGO]: http://www.ligo.org/
-[IJCAI]: https://ijcai-17.org/index.html
+[ACT Health]: http://www.health.act.gov.au/
+[iungo]: http://iungo.com.au/
+
+<!-- Documents and links -->
+[Honours thesis]: ../docs/honours_thesis.pdf
+[Masters thesis]: ../docs/masters_thesis.pdf
+[CV]: ../docs/cv.pdf
+[demo]: http://aslanides.io/aixijs
+[AMusA]: https://en.wikipedia.org/wiki/Associate_in_Music,_Australia
+
+<!-- Papers -->
+[AS2013]: https://arxiv.org/abs/1302.7094
+[ALH2017]: https://arxiv.org/abs/1705.10557
+
