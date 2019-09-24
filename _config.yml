@@ -27,9 +27,10 @@ url: "http://aslanides.io" # the base hostname & protocol for your site, e.g. ht
 
 twitter_username: john_aslanides
 github_username:  aslanides
+linkedin_username: johnaslanides
 
 # Build settings
-# theme: minima
+theme: minima
 markdown: kramdown
 permalink: pretty
 plugins:
