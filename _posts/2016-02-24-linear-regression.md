@@ -149,16 +149,16 @@ We now have the ingredients we need to implement a Bayesian updating scheme. The
 <table>
 	<tr>
 		<td>
-			<img src="/figures/plt1.png" width="300">
+			<img src="/assets/bayes-regression/plt1.png" width="300">
 		</td>
 		<td>
-			<img src="/figures/plt2.png" width="300">
+			<img src="/assets/bayes-regression/plt2.png" width="300">
 		</td>
 		<td>
 			$$\  \dots\  $$
 		</td>
 		<td>
-			<img src="/figures/plt20.png" width="300">
+			<img src="/assets/bayes-regression/plt20.png" width="300">
 		</td>
 	</tr>
 	<tr>

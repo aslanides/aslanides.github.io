@@ -62,7 +62,7 @@ $$
 
 The animation below illustrates this, showing how the optimal bet changes as we sweep our belief  over the interval \\([0,1]\\):
 
-<center><img src="/assets/animation.gif" /></center>
+<center><img src="/assets/cfar-game/animation.gif" /></center>
 
 Of course, one of the central notions at CFAR is recursive: becoming more rational requires metacognition, i.e. reasoning about reasoning. For this reason, when we played the game, many of the propositions were self-referential in nature. This makes for much more interesting markets, and goes to the whole meta theme. Propositions were typically of the form of "a randomly selected participant will willingly do/say X when prompted", or "the outcome of this market will be X", rather than propositions of the form "it will/won't rain tomorrow". There were numerous calibration markets run throughout the week, and they added to the generally stimulating and fun environment.
 
