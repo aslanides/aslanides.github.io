@@ -38,7 +38,7 @@ Now, let a 'typical' human intelligence be a vector $$v_{\text{Human}} \in V$$. 
 
 I anticipate Kelly would argue that this is missing his point, and that my vector space analogy is overly simplistic, and ignores the argument that intelligences are much more complex objects, as he seems to argue. It is difficult to understand his position here, though, as he seems somewhat confused about whether to use the vector analogy or the fractal/snowflake one. His vocabulary, and the images that he uses, seem to suggest both:
 
-<center><img src="/assets/kelly/complex.png" width="50%" /><img src="/assets/kelly/vector.jpeg" width="50%" /></center>
+<center><img src="/assets/cargo-cult/complex.png" width="50%" /><img src="/assets/cargo-cult/vector.jpeg" width="50%" /></center>
 
 In any case, this argument is largely about definitions of intelligence. Kelly chooses to define intelligence in a way that makes every animal unique and incomparable, and so tries to render the question of 'superhuman' intelligence moot. But most AI researchers would take the pragmatic view, that intelligence only matters insofar as what it enables you to _do_: can you build rockets to Mars? Can you invent new math? Can you conquer the planet/galaxy/observable universe? This issue relates to point 5, below.
 

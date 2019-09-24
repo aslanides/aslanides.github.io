@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-<center><img src="../assets/me.png" style="border-radius:50%" width="150" /></center>
+<center><img src="../assets/personal/me.png" style="border-radius:50%" width="150" /></center>
 
 I'm an Australian artificial intelligence researcher based in London at [DeepMind] since 2017. I was born in [Canberra] in 1990 to my loving parents, poet [Timoshenko Aslanides] and political scientist [Jenny Stewart].
 
@@ -12,7 +12,7 @@ I graduated from the [Australian National University] in 2016 with an MSc in com
 
 The easiest way to contact me is by email:
 
-<img src="../assets/email.png" width="300" />
+<img src="../assets/personal/email.png" width="300" />
 
 You can also check out my [CV], my [Google Scholar], or hit me up on social media via the links below.
 
