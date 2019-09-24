@@ -14,7 +14,7 @@ The easiest way to contact me is by email:
 
 <img src="../assets/email.png" width="300" />
 
-You can also check out my [CV], or hit me up on the links below.
+You can also check out my [CV], my [Google Scholar], or hit me up on social media via the links below.
 
 
 <!-- People -->
@@ -29,8 +29,8 @@ You can also check out my [CV], or hit me up on the links below.
 [Karma]: https://karma.wiki
 [Facebook]: https://www.facebook.com/john.aslanides
 [LinkedIn]: https://linkedin.com/in/johnaslanides
-[Google+]: https://plus.google.com/+johnaslanides
 [Karma Wiki]: https://karma.wiki/app/secure/user/bio:auth0%7C55c594c5a03e447768c72b57/biography/received
+[Google Scholar]: https://scholar.google.com/citations?user=jWIWqfcAAAAJ&hl=en
 
 <!-- Places and organisations -->
 [Canberra]: https://en.wikipedia.org/wiki/Canberra
