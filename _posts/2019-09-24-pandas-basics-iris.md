@@ -23,7 +23,7 @@ In this colab we do a quick review of the 'data science basics':
 - Use `scikit-learn` to fit a simple logistic regression model.
 
 
-```
+```python
 # @title Imports
 
 import numpy as np
@@ -69,7 +69,7 @@ df[target_column] = df[target_column].astype('category')
 ## Take a quick look at the data
 
 
-```
+```python
 # Look at the raw data to check it looks sensible.
 df.head()
 ```
@@ -150,7 +150,7 @@ df.head()
 
 
 
-```
+```python
 # Look at some summary statistics.
 df.describe()
 ```
