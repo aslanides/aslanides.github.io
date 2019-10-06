@@ -13,16 +13,16 @@ excerpt: Another machine-learning classic before we move onto more advanced topi
 
 A central result in 'classical' machine learning and statistics is known as the _bias-variance decomposition_. Let's flesh it out.
 
-Consider the univariate regression problem in which we have $x\in\mathbb{R}^D$, $y\in\mathbb{R}$, and want to learn the conditional distribution $p(y\lvert x)$, or at least its mean $\mathbb{E}[y\lvert x]$, via some parametric function $f(x)$. Now, any finite training set of $N$ points drawn from $p$ will itself be a random variable:
+Consider the univariate regression problem in which we have $$x\in\mathbb{R}^D$$, $$y\in\mathbb{R}$$, and want to learn the conditional distribution $$p(y\lvert x)$$, or at least its mean $$\mathbb{E}[y\lvert x]$$, via some parametric function $$f(x)$$. Now, any finite training set of $$N$$ points drawn from $$p$$ will itself be a random variable:
 
 $$
 \mathcal{D}=\left\{\left(x^{(n)}, y^{(n)}\right) \big|\ (x, y) \sim p(x, y)\right\}_{n=1}^N.
 $$
 
-The bias-variance decomposition considers how the risk (expected loss under $p$ for a model $f$) depends on this random variable. Let's do the calculation first, then tease out the intuition.
+The bias-variance decomposition considers how the risk (expected loss under $$p$$ for a model $$f$$) depends on this random variable. Let's do the calculation first, then tease out the intuition.
 
 
-The risk under the joint distribution $p(x,y)$ for a regression task using the square loss is given by
+The risk under the joint distribution $$p(x,y)$$ for a regression task using the square loss is given by
 
 $$
 \begin{aligned}
@@ -48,21 +48,21 @@ $$
 $$
 
 reasoning:
-* $\mathrm{(a)}$ expresses the fact that $f$ is a function of both its inputs $x$ and the dataset $\mathcal{D}$ it is trained on, which is a random variable.
-* $\mathrm{(b)}$ uses the additive identity; here $h(x):=\mathbb{E}_y[y\lvert x]$ is the optimal hypothesis under the square loss,
-* $\mathrm{(c)}$ follows by noting that the cross-term vanishes since $\mathbb{E}_{xy}[y-h(x)] = 0$,
-* $\mathrm{(d)}$ and $\mathrm{(e)}$ follow by again using the additive identity and noting that the cross-term is zero, and
-* $\mathrm{(f)}$ spells out the expectations in terms of the underlying marginals.
+* $$\mathrm{(a)}$$ expresses the fact that $$f$$ is a function of both its inputs $$x$$ and the dataset $$\mathcal{D}$$ it is trained on, which is a random variable.
+* $$\mathrm{(b)}$$ uses the additive identity; here $$h(x):=\mathbb{E}_y[y\lvert x]$$ is the optimal hypothesis under the square loss,
+* $$\mathrm{(c)}$$ follows by noting that the cross-term vanishes since $$\mathbb{E}_{xy}[y-h(x)] = 0$$,
+* $$\mathrm{(d)}$$ and $$\mathrm{(e)}$$ follow by again using the additive identity and noting that the cross-term is zero, and
+* $$\mathrm{(f)}$$ spells out the expectations in terms of the underlying marginals.
 
 This decomposition tells us a few things:
 
 - In all but the deterministic case, all expectation models will unsurprisingly incur non-zero risk from irreducible noise in the data.
-- Models that don't have sufficient capacity/flexibility or that are poorly specified will incur non-zero risk in expectation due to bias ('underfitting') resulting from being unable to closely match $h(x)$.
-- Models that 'overfit' to their datasets $\mathcal{D}$ will have high variance over all $\mathcal{D}$; this also contributes to the true risk.
+- Models that don't have sufficient capacity/flexibility or that are poorly specified will incur non-zero risk in expectation due to bias ('underfitting') resulting from being unable to closely match $$h(x)$$.
+- Models that 'overfit' to their datasets $$\mathcal{D}$$ will have high variance over all $$\mathcal{D}$$; this also contributes to the true risk.
 
 ## Simple demonstration
 
-Let's make something like Figure 3.5 of Bishop. We draw our data from $p(x,y)$ defined by:
+Let's make something like Figure 3.5 of Bishop. We draw our data from $$p(x,y)$$ defined by:
 
 $$
 p(x) = \mathcal{U}\left(-\frac{\pi}{2}, \frac{\pi}{2}\right) \\
@@ -126,7 +126,7 @@ Let's let fit a linear model
 
 $$f(x;\theta)=\theta^T\phi(x)$$
 
-where $\theta\in\mathbb{R}^M$ are model weights and $\phi: \mathbb{R}\to\mathbb{R}^M$ are features. Some example features:
+where $$\theta\in\mathbb{R}^M$$ are model weights and $$\phi: \mathbb{R}\to\mathbb{R}^M$$ are features. Some example features:
 
 - Polynomial:
   $$\phi_P^m(x) = x^m$$
@@ -134,7 +134,7 @@ where $\theta\in\mathbb{R}^M$ are model weights and $\phi: \mathbb{R}\to\mathbb{
   $$\phi_F^m(x) = \sin\left(\frac{2\pi m x}{M}\right)$$
 - Gaussian: $$\phi_G^m(x) = \exp\left(-\left[x + \frac{M\pi - 2\pi m}{M}\right]^2\right)$$
 
-We'll minimize the $l_2$-regularized empirical risk
+We'll minimize the $$l_2$$-regularized empirical risk
 
 $$
 \hat{\mathcal{L}}= + \lambda\big\|\theta\big\|^2_2 + \sum_{n=1}^N \left(y^{(i)} - f\left(x^{(i)};\theta\right)\right)^2.

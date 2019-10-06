@@ -291,9 +291,9 @@ $$
 \mathcal{L}\left(\pmb{x}, y \lvert \pmb{x}\right) = f(\pmb{x})^y (1 - f(\pmb{x}))^{1-y},
 $$
 
-where $f(\pmb{x}) = \sigma\left(\pmb{w}^T\pmb{x}\right)$.
+where $$f(\pmb{x}) = \sigma\left(\pmb{w}^T\pmb{x}\right)$$.
 
-Assuming the dataset $\mathcal{D}=\left\{\pmb{x}^{(i)}, y^{(i)}\right\}_{i=1}^{n}$ is iid, the negative log-likelihood yields the familiar cross-entropy loss:
+Assuming the dataset $$\mathcal{D}=\left\{\pmb{x}^{(i)}, y^{(i)}\right\}_{i=1}^{n}$$ is iid, the negative log-likelihood yields the familiar cross-entropy loss:
 
 $$
 \begin{aligned}
