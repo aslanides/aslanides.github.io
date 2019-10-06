@@ -129,15 +129,21 @@ $$f(x;\theta)=\theta^T\phi(x)$$
 where $$\theta\in\mathbb{R}^M$$ are model weights and $$\phi: \mathbb{R}\to\mathbb{R}^M$$ are features. Some example features:
 
 - Polynomial:
+
   $$\phi_P^m(x) = x^m$$
+
 - Fourier:
+
   $$\phi_F^m(x) = \sin\left(\frac{2\pi m x}{M}\right)$$
-- Gaussian: $$\phi_G^m(x) = \exp\left(-\left[x + \frac{M\pi - 2\pi m}{M}\right]^2\right)$$
+
+- Gaussian: 
+
+$$\phi_G^m(x) = \exp\left(-\left[x + \frac{M\pi - 2\pi m}{M}\right]^2\right)$$
 
 We'll minimize the $$l_2$$-regularized empirical risk
 
 $$
-\hat{\mathcal{L}}= + \lambda\big\|\theta\big\|^2_2 + \sum_{n=1}^N \left(y^{(i)} - f\left(x^{(i)};\theta\right)\right)^2.
+\hat{\mathcal{L}} = \lambda\big\|\theta\big\|^2_2 + \sum_{n=1}^N \left(y^{(i)} - f\left(x^{(i)};\theta\right)\right)^2.
 $$
 
 
