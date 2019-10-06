@@ -24,7 +24,7 @@ In this post I'm going to formulate two fun prediction/betting games that I lear
 
 This is related to the [game of the same name](http://acritch.com/credence-game/) by [Andrew Critch]. I'll formulate it somewhat formally here.
 
-A _calibration market_ \\(M\\) is a tuple \\(\left(P,\tau,B,\right)\\), where \\(P\\) is a proposition that is evaluated at some time \\(\tau\\). \\(B\\) is a finite sequence of _bets_ \\(b_0b_1b_2\dots\\), where each bet \\(b_i\in\(0,1)\\) is interpreted as the subjective credence of a player that \\(P\\) evaluates to \\(1\\) at time \\(\tau\\). For [obvious](https://en.wikipedia.org/wiki/Cromwell's_rule) [reasons](http://i0.kym-cdn.com/photos/images/facebook/000/008/729/Division_of_Zero_by_Sephro_Hoyland.jpg), values of 0 and 1 are not permitted. The market is initialised with a prior \\(b_0\\), usually bet by the _house_ or _market maker_, who may in turn participate in the market subsequently. Once \\(P\\) is evaluated, the market closes. Each bet (except the first) is scored by the log ratio with the previous bet
+A _calibration market_ $$M$$ is a tuple $$\left(P,\tau,B,\right)$$, where $$P$$ is a proposition that is evaluated at some time $$\tau$$. $$B$$ is a finite sequence of _bets_ $$b_0b_1b_2\dots$$, where each bet $$b_i\in\(0,1)$$ is interpreted as the subjective credence of a player that $$P$$ evaluates to $$1$$ at time $$\tau$$. For [obvious](https://en.wikipedia.org/wiki/Cromwell's_rule) [reasons](http://i0.kym-cdn.com/photos/images/facebook/000/008/729/Division_of_Zero_by_Sephro_Hoyland.jpg), values of 0 and 1 are not permitted. The market is initialised with a prior $$b_0$$, usually bet by the _house_ or _market maker_, who may in turn participate in the market subsequently. Once $$P$$ is evaluated, the market closes. Each bet (except the first) is scored by the log ratio with the previous bet
 
 $$
 \begin{align}
@@ -33,7 +33,7 @@ S[i] &= 100\log_2\left(\frac{b_i^P(1-b_i)^{1-P}}{b_{i-1}^P(1-b_{i-1})^{1-P}}\rig
 \end{align}
 $$
 
-Informally, you gain points if you move the market towards the truth, and lose points if you move it away from the truth. For each player \\(p_j\\), you add up the total score for the market.
+Informally, you gain points if you move the market towards the truth, and lose points if you move it away from the truth. For each player $$p_j$$, you add up the total score for the market.
 
 Some other rules:
 
@@ -42,13 +42,13 @@ Some other rules:
 
 \* This second rule is deliberately left flexible and informal: how it is interpreted, and how strictly it is applied is down to taste.
 
-The equation above is an example of a [proper scoring rule]: to maximize your expected score one should always bet your true beliefs -- this was pointed out to me by [Matthew Graves]. Let your true belief be \\(a\\), and your bet be \\(b\\). Let the previous bet be \\(c\\), though we will see that it turns out the value of \\(c\\) doesn't matter. Consider your \\(a\\)-expected score as a function of \\(b\\):
+The equation above is an example of a [proper scoring rule]: to maximize your expected score one should always bet your true beliefs -- this was pointed out to me by [Matthew Graves]. Let your true belief be $$a$$, and your bet be $$b$$. Let the previous bet be $$c$$, though we will see that it turns out the value of $$c$$ doesn't matter. Consider your $$a$$-expected score as a function of $$b$$:
 
 $$
 \mathbb{E}[S] = a\log_2\left(\frac{b}{c}\right) + (1-a)\log_2\left(\frac{1-b}{1-c}\right).
 $$
 
-We can maximize the expected value simply by setting the derivative to zero and solving for \\(b\\), since it is trivial to show that \\(\mathbb{E}[S]\\) is concave. The derivative is given by
+We can maximize the expected value simply by setting the derivative to zero and solving for $$b$$, since it is trivial to show that $$\mathbb{E}[S]$$ is concave. The derivative is given by
 
 $$
 \partial_b\mathbb{E}[S] = \frac{a-b}{b(1-b)},
@@ -60,7 +60,7 @@ $$
 \arg\max_{b}\mathbb{E}[S] = a.
 $$
 
-The animation below illustrates this, showing how the optimal bet changes as we sweep our belief  over the interval \\([0,1]\\):
+The animation below illustrates this, showing how the optimal bet changes as we sweep our belief  over the interval $$[0,1]$$:
 
 <center><img src="/assets/cfar-game/animation.gif" /></center>
 
@@ -70,15 +70,15 @@ Of course, one of the central notions at CFAR is recursive: becoming more ration
 
 ## Bid/At
 
-I'm told that this game is played a lot at [Jane Street]. The game is simple: You make a market out of some future/unknown outcome \\(Q\\) that is quantifiable. For simplicity, let \\(Q\\) be a positive-valued random variable. The market consists of two or more players buying and selling contracts relating to the outcome \\(Q\\):
+I'm told that this game is played a lot at [Jane Street]. The game is simple: You make a market out of some future/unknown outcome $$Q$$ that is quantifiable. For simplicity, let $$Q$$ be a positive-valued random variable. The market consists of two or more players buying and selling contracts relating to the outcome $$Q$$:
 
-A __contract__ between two players \\(p_1\\) and \\(p_2\\) is executed as follows: \\(p_1\\) pays \\(p_2\\) \\(x>0\\) credits, and receives in exchange a promise stipulating that after the value of \\(Q\\) is known, \\(p_2\\) will pay P1 \\(Q\\) credits. Information flows in the market by players sending price signals to each other: a player may __bid__ a value \\(x\\) to indicate they are willing to buy a contract for \\(x\\) credits, or conversely declare they are __at__ a value \\(y\\), which indicates they are willing to sell a contract for \\(y\\) credits.
+A __contract__ between two players $$p_1$$ and $$p_2$$ is executed as follows: $$p_1$$ pays $$p_2$$ $$x>0$$ credits, and receives in exchange a promise stipulating that after the value of $$Q$$ is known, $$p_2$$ will pay P1 $$Q$$ credits. Information flows in the market by players sending price signals to each other: a player may __bid__ a value $$x$$ to indicate they are willing to buy a contract for $$x$$ credits, or conversely declare they are __at__ a value $$y$$, which indicates they are willing to sell a contract for $$y$$ credits.
 
-In general one would bid \\(x\\) if one believes that \\(\mathbb{E}[Q] > x\\), and accept bids at \\(x\\) if one believes that \\(\mathbb{E}[Q] < x\\). Like the calibration game above, players can make inferences about the beliefs of other players (based on bid/at prices) and update their own beliefs; presumably the market converges to a fixed price under certain conditions, though I haven't thought about it enough to write down what those conditions must be.
+In general one would bid $$x$$ if one believes that $$\mathbb{E}[Q] > x$$, and accept bids at $$x$$ if one believes that $$\mathbb{E}[Q] < x$$. Like the calibration game above, players can make inferences about the beliefs of other players (based on bid/at prices) and update their own beliefs; presumably the market converges to a fixed price under certain conditions, though I haven't thought about it enough to write down what those conditions must be.
 
-The main interesting game-theoretic difference between Bid/At and Calibration is that in Bid/At, you are incentivized to hide your subjective belief \\(\mathbb{E}[Q]\\), so as to potentially reap the biggest margins when buying/selling contracts. In any case, it's a game that rewards forming accurate predictive models about the world, with an added element of risk management.
+The main interesting game-theoretic difference between Bid/At and Calibration is that in Bid/At, you are incentivized to hide your subjective belief $$\mathbb{E}[Q]$$, so as to potentially reap the biggest margins when buying/selling contracts. In any case, it's a game that rewards forming accurate predictive models about the world, with an added element of risk management.
 
-If played in earnest, the players would keep records of all contracts, and when \\(Q\\) is realized, the contracts are paid out at some (pre-determined) credits-to-dollars conversion rate.
+If played in earnest, the players would keep records of all contracts, and when $$Q$$ is realized, the contracts are paid out at some (pre-determined) credits-to-dollars conversion rate.
 
 ## Bonus: Group Decision Algorithm
 
