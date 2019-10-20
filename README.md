@@ -13,7 +13,7 @@ This is my personal blog/website, which you can visit at [aslanides.io].
 
 The site is built in [Jekyll] and is hosted via GitHub pages.
 
-To serve (assuming you have Jekyll installed):
+To serve locally (assuming you have Jekyll installed):
 
 ```bash
 git clone git@github.com:aslanides/aslanides.github.io.git
