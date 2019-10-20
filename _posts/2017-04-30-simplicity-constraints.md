@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Simplicity is Complicated; Contraints bring Freedom"
+title:  "Simplicity is complicated; contraints bring freedom"
 date:   2017-04-30 13:37:00 +1100
 categories: general
 excerpt: 'Ruminations on Pike, Strunk, and White.'
