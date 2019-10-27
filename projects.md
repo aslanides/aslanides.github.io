@@ -20,7 +20,7 @@ Here is a list of personal code on my [GitHub]({{page.github}}).
   - Belief propagation (2016): [post](/blog/marginalization-einstein) \| [code]({{page.github}}/dag-inference)
   - Pandas basics (2019): [post](/blog/pandas-basics-iris) \| [notebook]({{page.colab}}/2019-09-24-pandas-basics-iris.ipynb)
   - Bias-variance decomposition (2019): [post](/blog/bias-variance) \| [notebook]({{page.colab}}/2019-10-06-bias-variance.ipynb)
-  - Sampling basics (2019): [post](/blog/sampling) \| [notebook]({{page.colab}}/2019-10-06-sampling.ipynb)
+  - Sampling basics (2019): [post](/blog/sampling) \| [notebook]({{page.colab}}/2019-10-10-sampling.ipynb)
   - Interpolation regime (2019): [post](/blog/interpolation-regime) \| [notebook]({{page.colab}}/2019-10-10-interpolation-regime.ipynb)
   - Principal component analysis (2019): [post](/blog/pca) \| [notebook]({{page.colab}}/2019-10-20-pca.ipynb)
   - Variational autoencoders (2019): [post](/blog/vae) \| [notebook]({{page.colab}}/2019-10-25-vae.ipynb)
