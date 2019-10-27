@@ -28,7 +28,7 @@ url: "http://aslanides.io" # the base hostname & protocol for your site, e.g. ht
 # Build settings
 theme: minima
 markdown: kramdown
-permalink: pretty
+permalink: /blog/:title
 plugins:
   - jekyll-feed
 

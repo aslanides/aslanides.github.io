@@ -6,7 +6,7 @@ categories: machine_learning
 excerpt: A simple end-to-end example using the scientific python stack.
 ---
 
-In the spirit of our [last post](/machine_learning/2019/09/25/mastering-basics), let's take things back to basics with a simple end-to-end data analysis example.
+In the spirit of our [last post](/blog/mastering-basics), let's take things back to basics with a simple end-to-end data analysis example.
 
 <!-- This markdown created via `jupyter nbconvert`, with some extra edits. -->
 

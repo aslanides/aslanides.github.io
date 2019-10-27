@@ -1,10 +1,10 @@
 ---
 layout: page
 title: About
-permalink: /about/
+permalink: /about
 ---
 
-<center><img src="../assets/personal/me.png" style="border-radius:50%" width="150" /></center>
+<p style="text-align: center;"><img src="../assets/personal/me.png" style="border-radius:50%" width="150" /></p>
 
 I'm an Australian artificial intelligence researcher based in London at [DeepMind] since 2017. I was born in [Canberra] in 1990 to my loving parents, poet [Timoshenko Aslanides] and political scientist [Jenny Stewart].
 
