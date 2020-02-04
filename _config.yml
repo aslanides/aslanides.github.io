@@ -32,6 +32,9 @@ instagram_username: goodkant
 linkedin_username: johnaslanides
 twitter_username: john_aslanides
 
+# Analytics
+google_analytics: UA-74312713-1
+
 # Build settings
 theme: minima
 markdown: kramdown
