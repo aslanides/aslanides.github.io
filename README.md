@@ -18,6 +18,7 @@ To serve locally (assuming you have Jekyll installed):
 ```bash
 git clone git@github.com:aslanides/aslanides.github.io.git
 cd aslanides.github.io
+bundle install
 bundle exec jekyll serve
 ```
 
