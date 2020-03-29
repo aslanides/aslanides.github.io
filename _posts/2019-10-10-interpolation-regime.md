@@ -113,9 +113,7 @@ In this experiment we train a single hidden-layer MLP on MNIST for various sizes
 
 ```python
 # We'll use TensorFlow 2 with Sonnet 2.
-# These aren't installed by default in the Colab runtime.
-! pip install --quiet tensorflow==2.0.0
-! pip install --quiet "dm-sonnet==2.0.0b0"
+! pip install --quiet dm-sonnet
 ```
 
 
