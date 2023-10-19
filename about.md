@@ -8,7 +8,7 @@ permalink: /about
 
 I'm an Australian artificial intelligence researcher based in London at [DeepMind] since 2017. I was born in [Canberra] in 1990 to my loving parents, poet [Timoshenko Aslanides] and political scientist [Jenny Stewart].
 
-I graduated from the [Australian National University] in 2016 with an MSc in computer science. My [Masters thesis] was on reinforcement learning under the joint supervision of [Jan Leike] and [Marcus Hutter], and resulted in an [IJCAI publication][ALH2017] and accompanying web [demo]. Prior to this, I worked on [Karma], a new kind of social network based around open letters of gratitude and founded in Canberra in 2015. I've also worked as a consultant to [ACT Health] and [iungo], a smart car startup based in Sydney. In 2013 I worked on signal processing techniques for the [LIGO] project and on conditional random fields at the (now-defunct) [NICTA]. In 2012 I graduated from the [Australian National University] with a BSc in physics. My [Honours thesis] was in physics education research under the supervision of [Craig Savage], and resulted in a [Physical Review publication][AS2013]. I'm also (sadly!) a lapsed pianist; in 2011 I earned the [AMusA] diploma in piano performance.
+I graduated from the [Australian National University] in 2016 with an MSc in computer science. My [Masters thesis] was on reinforcement learning under the joint supervision of [Jan Leike] and [Marcus Hutter], and resulted in an [IJCAI publication][ALH2017] and accompanying web [demo]. Prior to this, I worked on Karma, a new kind of social network based around open letters of gratitude and founded in Canberra in 2015. I've also worked as a consultant to [ACT Health] and iungo, a smart car startup based in Sydney. In 2013 I worked on signal processing techniques for the [LIGO] project and on conditional random fields at the (now part of CSIRO) [NICTA]. In 2012 I graduated from the [Australian National University] with a BSc in physics. My [Honours thesis] was in physics education research under the supervision of [Craig Savage], and resulted in a [Physical Review publication][AS2013]. I'm also (sadly!) a lapsed pianist; in 2011 I earned the [AMusA] diploma in piano performance.
 
 You can also check out my [CV], my [Google Scholar], or hit me up on social media via the links below.
 
@@ -22,10 +22,8 @@ You can also check out my [CV], my [Google Scholar], or hit me up on social medi
 
 <!-- Social media -->
 [GitHub]: https://github.com/aslanides
-[Karma]: https://karma.wiki
-[Facebook]: https://www.facebook.com/john.aslanides
+[Twitter]: https://twitter.com/john_aslanides
 [LinkedIn]: https://linkedin.com/in/johnaslanides
-[Karma Wiki]: https://karma.wiki/app/secure/user/bio:auth0%7C55c594c5a03e447768c72b57/biography/received
 [Google Scholar]: https://scholar.google.com/citations?user=jWIWqfcAAAAJ&hl=en
 
 <!-- Places and organisations -->
